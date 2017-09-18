@@ -1,4 +1,4 @@
-#!/usr/bin/python import socket
+#!/usr/bin/python
 
 import socket
 import sys
